@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!-- <input type="number" id="get_no" name="get_no"  />
+    <button class="btn btn-success" onclick="load_no()" value="">Submit</button><br>
+    
+    <select name="list_no" id="list_no"></select>
+
+    <div id="content"> -->
+      
+      <!-- <button onclick="increment()">Increment</button>
+      <button onclick="decrement()">Decrement</button> -->
+      <input type="date" value="" id="indate"/>
+      <button onclick="dates()">Submit</button>
+      <div id="ulid"></div>
+
+    </div>
+
+    <script>
+    //   Date.prototype.addDays = function (days) {
+    //   const date = new Date(this.valueOf())
+    //   date.setDate(date.getDate() + days)
+    //   return date
+    //   }
+    var divid=document.getElementById("ulid");
+
+      function dates(){
+      var a=document.getElementById("indate").value;
+      const date=new Date();
+      date.setDate(date.getDate()+5);
+      console.log(date);
+      divid.innerHTML=""+date;
+
+    }
+        // var b=document.getElementById();
+        // function load_no(){
+        //     var a=document.getElementById("get_no").value;
+        //     var s='';
+        //     s+='<option value="">--choose--</option>';
+
+        //     for(var i=1;i<=a;i++){
+        //         s+='<option value=" '+i+' ">'+i+'</option>';
+        //     }
+
+        //     document.getElementById('list_no').innerHTML=s;
+            
+            
+            
+        // }
+        // var divid=document.getElementById("ulid");
+        //     let item=document.createElement("li");
+        //     var i;
+        //       function increment(){
+        //         i=1;
+        //           i+=i;
+        //           item.innerHTML=i;
+        //           divid.appendChild(item);
+
+        //         }
+
+
+        //         function decrement(){
+
+        //            i--;
+        //            item.innerHTML=i;
+        //            divid.appendChild(item); 
+        //         }
+                
+
+
+       
+    </script>
+    </body>
+</html>
